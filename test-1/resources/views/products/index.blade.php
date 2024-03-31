@@ -41,6 +41,9 @@
                             <input type="submit" value="delete">
                         </form>
                     </td>
+                    <td>
+                        <a href="{{ route('add', ['x' => $product->id]) }}">Add to Cart</a>
+                    </td>
                 </tr>
             @endforeach
         </table>
