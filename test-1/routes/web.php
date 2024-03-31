@@ -12,3 +12,4 @@ Route::get('/products/create',[ProductsController::class,'create'])->name('produ
 Route::post('/products',[ProductsController::class,'store'])->name('products.store');
 Route::get('/products/{product}/edit',[ProductsController::class,'edit'])->name('products.edit');
 Route::put('/products/{product}/update',[ProductsController::class,'update'])->name('products.update');
+Route::delete('/products/{product}/delete',[ProductsController::class,'delete'])->name('products.delete');
